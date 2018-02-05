@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Diet Challenge</string>
+    <string name="monday">MONDAY</string>
+    <string name="diet_challenge">DIET CHALLENGE!</string>
+    <string name="button1">-1000kcal</string>
+    <string name="button2">1000kcal-1500kcal</string>
+    <string name="button3">1500kcal-2000kcal</string>
+    <string name="button4">2000kcal-2500kcal</string>
+    <string name="button5">-1000kcal</string>
+    <string name="button6">1000kcal-1500kcal</string>
+    <string name="button7">1500kcal-2000kcal</string>
+    <string name="button8">2000kcal-2500kcal</string>
+    <string name="results">Results</string>
+    <string name="reset">RESET</string>
     <string-array name="name_list">
         <item>Jane</item>
         <item>Alexandra</item>
@@ -15,4 +27,26 @@
         <item>Saturday</item>
         <item>Sunday</item>
     </string-array>
+    <string name="welcome_message">READY TO START YOUR JOURNEY?</string>
+    <string name="click_me">YES!</string>
+    <string name="name"></string>
+    <string name="yourName">Write your name:</string>
+    <string name="question1_submit">Submit</string>
+    <string name="Fruit">Fruit</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="nuts">Nuts</string>
+    <string name="Bread">Bread</string>
+    <string name="rice">Rice</string>
+    <string name="pasta">Pasta</string>
+    <string name="Dairy">Dairy products</string>
+    <string name="no_dairy">No dairy proteins</string>
+    <string name="meat">Meat</string>
+    <string name="fish">Fish</string>
+    <string name="beans">Beans and nuts</string>
+    <string name="vegan">Vegan</string>
+    <string name="vege">Vegetarian</string>
+    <string name="gluten">Gluten</string>
+    <string name="all">I eat all</string>
+
+
 </resources>

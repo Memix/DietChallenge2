@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diet_types">
+    <item>Vegan</item>
+    <item>Vegetarian</item>
+    <item>Gluten free</item>
+    <item>I eat all</item>
+    </string-array>
+</resources>

@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".challenge" />
+        <activity android:name=".Challenge" />
+        <activity android:name=".second" />
+        <activity android:name=".three" />
+        <activity android:name=".four" />
+        <activity android:name=".five" />
+        <activity android:name=".six"></activity>
     </application>
 
 </manifest>

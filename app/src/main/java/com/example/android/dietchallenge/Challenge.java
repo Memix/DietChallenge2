@@ -238,7 +238,7 @@ public class Challenge extends AppCompatActivity implements AdapterView.OnItemSe
         }
 
         Context message = getApplicationContext();
-        CharSequence text = "You are done for today! Good job!!!";
+        CharSequence text = "You are done for today! Good job!";
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(message, text, duration);
         toast.show();

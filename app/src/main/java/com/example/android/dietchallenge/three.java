@@ -20,19 +20,16 @@ public class three extends AppCompatActivity {
         question1 = (TextView) findViewById(R.id.question1);
         question1.setText("What type of food do you like most?");
 
-        setupSubmitButton();
-    }
 
-    private void setupSubmitButton() {
-        Button btn = (Button) findViewById(R.id.summary1);
-        btn.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.summary).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-            Intent intent = new Intent (three.this, Challenge.class );
-            startActivity(intent);
+            public void onClick(View v) {
+                Intent page = new Intent(three.this, Challenge.class);
+                startActivity(page);
             }
+            });
 
-        });
     }
+
 
 }

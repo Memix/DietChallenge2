@@ -1,5 +1,6 @@
 package com.example.android.dietchallenge;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,7 @@ public class second extends AppCompatActivity {
 
     TextView myMessage;
     TextView summary;
+    String text = "You didn't click anything";
 
 
     @Override
@@ -34,31 +36,41 @@ public class second extends AppCompatActivity {
         summary = (TextView) findViewById(R.id.summary);
         summary.setText("Let's start by figuering out what you like. This is your first question." + "\n" + "Which is your favourite diet?");
 
+        findViewById(R.id.summary1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                RadioButton veganRadioButton = (RadioButton) findViewById(R.id.radio1);
+                RadioButton vegeRadioButton = (RadioButton) findViewById(R.id.radio2);
+                RadioButton glutenRadioButton = (RadioButton) findViewById(R.id.radio3);
+                RadioButton allRadioButton = (RadioButton) findViewById(R.id.radio4);
+
+
+
+                    if (veganRadioButton.isChecked()) {
+                        Intent page = new Intent(second.this, three.class);
+                        startActivity(page);
+                    } else if (vegeRadioButton.isChecked()) {
+                        Intent page = new Intent(second.this, four.class);
+                        startActivity(page);
+                    } else if (glutenRadioButton.isChecked()) {
+                        Intent page = new Intent(second.this, five.class);
+                        startActivity(page);
+                    } else if (allRadioButton.isChecked()); {
+                        Intent page = new Intent(second.this, six.class);
+                        startActivity(page);
+                    }
+
+
+
+                }
+
+        });
 
         }
 
 
-    public void enter(View view) {
-
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.radio1:
-                if (checked) {
-                    Intent page = new Intent(second.this, three.class);
-                    startActivity(page);}
-                // Pirates are the best
-                break;
-            case R.id.radio2:
-                if (checked)
-                {
-                    Intent page = new Intent(second.this, four.class);
-                    startActivity(page);}
-                // Ninjas rule
-                break;
-        }
-    }
 }
 
 

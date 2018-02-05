@@ -47,6 +47,8 @@
     <string name="vege">Vegetarian</string>
     <string name="gluten">Gluten</string>
     <string name="all">I eat all</string>
+    <string name="my_name">My name</string>
+
 
 
 </resources>

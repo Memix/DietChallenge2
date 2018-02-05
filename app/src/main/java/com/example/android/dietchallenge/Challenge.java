@@ -1,5 +1,6 @@
 package com.example.android.dietchallenge;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Challenge extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -29,13 +31,23 @@ public class Challenge extends AppCompatActivity implements AdapterView.OnItemSe
     String name1 = "";
     String name2 = "";
 
-    TextView firstName, secondName, context;
+    TextView firstName, secondName, context, message1;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_challenge);
+
+
+
+
+
+            message1 = (TextView) findViewById(R.id.newMessage);
+            message1.setText("We are going to try to find the best recepies just for you! While you wait you can begin the Challege! Enjoy!");
+
 
 
 
@@ -54,7 +66,31 @@ public class Challenge extends AppCompatActivity implements AdapterView.OnItemSe
         spinner2.setOnItemSelectedListener(Challenge.this);
 
 
+
     }
+    @Override
+    protected void onSaveInstanceState (Bundle outState){
+        super.onSaveInstanceState(outState);
+
+
+
+        outState.putInt("score", score1);
+        outState.putInt("score", score2);
+        outState.putInt("score", score3);
+        outState.putInt("score", score4);
+
+    }
+
+    protected void onRestoreInstanceState (Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        score1 = savedInstanceState.getInt("score");
+        score2 = savedInstanceState.getInt("score");
+        score3 = savedInstanceState.getInt("score");
+        score4 = savedInstanceState.getInt("score");
+
+    }
+
 
     public void input1 (View v){
 
@@ -157,6 +193,8 @@ public class Challenge extends AppCompatActivity implements AdapterView.OnItemSe
     }
 
 
+
+
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.view_score2);
         scoreView.setText(String.valueOf(score));
@@ -198,6 +236,12 @@ public class Challenge extends AppCompatActivity implements AdapterView.OnItemSe
             TextView context = (TextView) findViewById(R.id.context);
             context.setText(name1 + " wins! " + name2 + " should pay " + name1 + " a drink!");
         }
+
+        Context message = getApplicationContext();
+        CharSequence text = "You are done for today! Good job!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(message, text, duration);
+        toast.show();
 
     }
 

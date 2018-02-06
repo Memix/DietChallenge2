@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colors.xml">#990099</color>
     <color name="welcome_color">#9932CC</color>
+    <color name="style_color">#4d4d4d</color>
 </resources>

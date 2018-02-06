@@ -21,7 +21,6 @@ public class second extends AppCompatActivity {
 
     TextView myMessage;
     TextView summary;
-    String text = "You didn't click anything";
 
 
     @Override
@@ -40,35 +39,29 @@ public class second extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 RadioButton veganRadioButton = (RadioButton) findViewById(R.id.radio1);
                 RadioButton vegeRadioButton = (RadioButton) findViewById(R.id.radio2);
                 RadioButton glutenRadioButton = (RadioButton) findViewById(R.id.radio3);
                 RadioButton allRadioButton = (RadioButton) findViewById(R.id.radio4);
 
-
-
-                    if (veganRadioButton.isChecked()) {
-                        Intent page = new Intent(second.this, three.class);
-                        startActivity(page);
-                    } else if (vegeRadioButton.isChecked()) {
-                        Intent page = new Intent(second.this, four.class);
-                        startActivity(page);
-                    } else if (glutenRadioButton.isChecked()) {
-                        Intent page = new Intent(second.this, five.class);
-                        startActivity(page);
-                    } else if (allRadioButton.isChecked()); {
-                        Intent page = new Intent(second.this, six.class);
-                        startActivity(page);
-                    }
-
-
-
+                if (veganRadioButton.isChecked()) {
+                    Intent page = new Intent(second.this, three.class);
+                    startActivity(page);
+                } else if (vegeRadioButton.isChecked()) {
+                    Intent page = new Intent(second.this, four.class);
+                    startActivity(page);
+                } else if (glutenRadioButton.isChecked()) {
+                    Intent page = new Intent(second.this, five.class);
+                    startActivity(page);
+                } else if (allRadioButton.isChecked()) {
+                    Intent page = new Intent(second.this, six.class);
+                    startActivity(page);
                 }
+            }
 
-        });
-
+            });
         }
+
 
 
 }

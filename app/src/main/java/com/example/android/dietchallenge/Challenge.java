@@ -31,6 +31,7 @@ public class Challenge extends AppCompatActivity implements AdapterView.OnItemSe
     String name1 = "";
     String name2 = "";
 
+
     TextView firstName, secondName, context, message1;
 
 
@@ -49,10 +50,9 @@ public class Challenge extends AppCompatActivity implements AdapterView.OnItemSe
             message1.setText("We are going to try to find the best recepies just for you! While you wait you can begin the Challege! Enjoy!");
 
 
-
-
         // Create an ArrayAdapter using the string array and a default spinner layout
         adapter = ArrayAdapter.createFromResource(this, R.array.name_list, R.layout.support_simple_spinner_dropdown_item);
+
 
         //define spinner
         spinner1 = (Spinner) findViewById(R.id.spinner1);

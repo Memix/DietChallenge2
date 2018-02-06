@@ -17,10 +17,8 @@
 
         <TextView
             android:id="@+id/question1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="20sp"/>
+            style="@style/textstyle2"
+            android:textColor="@color/style_color"/>
 
 
         <CheckBox
@@ -31,14 +29,12 @@
 
         <CheckBox
             android:id="@+id/box2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vegetables"/>
+            android:text="@string/vegetables"
+            style="@style/checkboxStyle"/>
 
         <CheckBox
             android:id="@+id/box3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/checkboxStyle"
             android:text="@string/Bread"/>
 
         <CheckBox
@@ -49,23 +45,17 @@
 
         <CheckBox
             android:id="@+id/box5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/checkboxStyle"
             android:text="@string/rice"/>
 
         <CheckBox
             android:id="@+id/box6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/checkboxStyle"
             android:text="@string/no_dairy"/>
-
-
 
         <Button
             android:id="@+id/summary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/mybutton"
             android:layout_marginTop="20dp"
             android:text="@string/question1_submit"/>
 

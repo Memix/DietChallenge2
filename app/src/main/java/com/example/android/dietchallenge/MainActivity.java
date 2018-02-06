@@ -31,10 +31,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent page = new Intent(MainActivity.this, second.class);
+
                 String myMessage = message.getText().toString();
-                page.putExtra("message_key", myMessage);
-                startActivity(page);
+
+
+                if( message.getText().toString().isEmpty()){
+
+                    /**
+                     *   You can Toast a message here that the Username is Empty
+                     **/
+
+                    message.setError( "First name is required!" );
+
+                }else{
+                    Intent page = new Intent(MainActivity.this, second.class);
+                    page.putExtra("message_key", myMessage);
+                    startActivity(page);
+                }
             }
 
         });

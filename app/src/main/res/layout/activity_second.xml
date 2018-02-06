@@ -17,55 +17,51 @@
 
     <TextView
         android:id="@+id/write_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
+        style="@style/textstyle1"
         android:layout_weight="1"
         android:layout_margin="20dp"
-        />
+        android:textColor="@color/style_color"/>
 
         <TextView
             android:id="@+id/summary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/size1"
             android:layout_marginBottom="20dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textColor="@color/style_color"/>
 
-
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
         <RadioButton
             android:id="@+id/radio1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vegan" />
+            android:text="@string/vegan"
+            style="@style/checkboxStyle"/>
 
         <RadioButton
             android:id="@+id/radio2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vege"/>
+            android:text="@string/vege"
+            style="@style/checkboxStyle"/>
 
         <RadioButton
             android:id="@+id/radio3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/gluten"/>
+            android:text="@string/gluten"
+            style="@style/checkboxStyle"/>
 
         <RadioButton
             android:id="@+id/radio4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/all" />
+            android:text="@string/all"
+            style="@style/checkboxStyle"/>
+
+</RadioGroup>
+
 
 
         <Button
             android:id="@+id/summary1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginTop="20dp"
-            android:text="@string/question1_submit" />
+            android:text="@string/question1_submit"
+            style="@style/mybutton"/>
 
 </LinearLayout>
 
